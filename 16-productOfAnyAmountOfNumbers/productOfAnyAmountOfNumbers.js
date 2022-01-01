@@ -1,5 +1,9 @@
 function productOfAnyAmountOfNumbers(...args) {
-  // Insert code here;
+let product=1;
+  for(let i of args){
+    product=product*i;
+  }
+return product;  // Insert code here;
 }
 
 // Do not edit this line;
