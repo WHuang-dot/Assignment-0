@@ -1,10 +1,7 @@
 function countOfAllNumbersSmallerThanTarget(nums, target) {
   let smaller = 0;
 
-  for(let i = 0; i<nums.length;i++){
-    if(nums[i] === target){
-      break;
-    }
+  for(let i = 0; i<nums.length;i++){ // Loop through the array.
     if(nums[i]<target){
       smaller++;
     }
