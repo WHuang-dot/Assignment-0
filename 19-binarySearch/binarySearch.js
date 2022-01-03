@@ -4,16 +4,16 @@ class MySolution {
   }
 
   binarySearch(nums, target) {
-    let mid = Math.floor(nums.length / 2);
+    let mid = Math.floor(nums.length / 2); //set mid
     if (nums.length === 1 && nums[0] != target) {
-      return false;
+      return false; //if target still not found, return false
     }
     if (target === nums[mid]) {
-      return true;
+      return true; // target found at mid
     } else if (target < nums[mid]) {
-      return this.binarySearch(nums.slice(0, mid), target);
+      return this.binarySearch(nums.slice(0, mid), target); //recursively check the right side
     } else if (target > nums[mid]) {
-      return this.binarySearch(nums.slice(mid), target);
+      return this.binarySearch(nums.slice(mid), target); //recursively check the left side
     }
   }
 }

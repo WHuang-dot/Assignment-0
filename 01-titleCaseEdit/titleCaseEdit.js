@@ -2,10 +2,10 @@ function titleCaseEdit(title) {
 let lowertitle = title.split(" ");
 
 for (let i = 0; i < lowertitle.length; i++){
-	lowertitle[i] =lowertitle[i][0].toUpperCase() + lowertitle[i].substring(1);
+	lowertitle[i] =lowertitle[i][0].toUpperCase() + lowertitle[i].substring(1); //change to uppercase using string manipulation
 }
 
-let upperedTitle = lowertitle.join(" ");
+let upperedTitle = lowertitle.join(" "); //add back
 
 return upperedTitle;
 }
